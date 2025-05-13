@@ -15,6 +15,10 @@ import PostJob from "./pages/PostJob.jsx";
 import BrowseJobs from "./pages/BrowseJobs.jsx";
 import AboutUs from "./pages/AboutUs.jsx";
 import ContactUs from "./pages/ContactUs.jsx";
+import ResumeTips from "./pages/ResumeTips.jsx";
+import InterviewTips from "./pages/InerviewTips.jsx";
+import PrivacyPolicy from "./pages/PrivacyPolicy.jsx";
+import Term from "./pages/Term.jsx";
 
 const router = createBrowserRouter([
   {
@@ -52,6 +56,22 @@ const router = createBrowserRouter([
       {
         path: "/postjob",
         element: <PostJob />,
+      }, 
+      {
+        path: "/resume-tips",
+        element: <ResumeTips />,
+      },
+       {
+        path: "/interview-tips",
+        element: <InterviewTips />,
+      },
+       {
+        path: "/privacy-policy",
+        element: <PrivacyPolicy />,
+      },
+       {
+        path: "/terms-condition",
+        element: <Term />,
       },
     ],
   },

@@ -1,9 +1,11 @@
 import React from "react";
 import { Briefcase, Search, Users, ShieldCheck } from "lucide-react";
+import Footer from "../components/Footer";
 
 const AboutUs = () => {
   return (
-    <div className="min-h-screen bg-gray-100 text-gray-800 px-6 py-20">
+  
+    <><div className="min-h-screen bg-gray-100 text-gray-800 px-6 py-20">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-5xl font-extrabold text-center mb-10 text-green-700">
           About JobQuest
@@ -98,7 +100,9 @@ const AboutUs = () => {
           </a>
         </section>
       </div>
-    </div>
+    </div> <Footer/> </>
+   
+    
   );
 };
 

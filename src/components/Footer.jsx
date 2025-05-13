@@ -39,8 +39,8 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-400 text-sm">
               <li><Link to="/jobs" className="hover:text-white">Browse Jobs</Link></li>
               <li><Link to="/signup" className="hover:text-white">Create Profile</Link></li>
-              <li><a href="#" className="hover:text-white">Resume Tips</a></li>
-              <li><a href="#" className="hover:text-white">Interview Guidance</a></li>
+              <li><Link to="/resume-tips" className="hover:text-white">Resume Tips</Link></li>
+              <li><Link to="/interview-tips" className="hover:text-white">Interview Guidance</Link></li>
             </ul>
           </div>
 
@@ -48,10 +48,10 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Employers</h3>
             <ul className="space-y-2 text-gray-400 text-sm">
-              <li><Link to="/signup" className="hover:text-white">Post Job</Link></li>
-              <li><a href="#" className="hover:text-white">Search Talent</a></li>
-              <li><a href="#" className="hover:text-white">Company Dashboard</a></li>
-              <li><a href="#" className="hover:text-white">Pricing</a></li>
+              <li><Link to="/login/recruiter" className="hover:text-white">Post Job</Link></li>
+              <li><Link to="/login/recruiter" className="hover:text-white">Search Talent</Link></li>
+              <li><Link to="/login/recruiter" className="hover:text-white">Company Dashboard</Link></li>
+              <li><Link to="/login/recruiter" className="hover:text-white">Pricing</Link></li>
             </ul>
           </div>
 
@@ -62,8 +62,8 @@ const Footer = () => {
               <li><Link to="/" className="hover:text-white flex items-center gap-1"><Home size={16} /> Home</Link></li>
               <li><Link to="/about" className="hover:text-white">About Us</Link></li>
               <li><Link to="/contact" className="hover:text-white">Contact</Link></li>
-              <li><a href="#" className="hover:text-white">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-white">Terms & Conditions</a></li>
+              <li><Link to="/privacy-policy" className="hover:text-white">Privacy Policy</Link></li>
+              <li><Link to="/terms-condition" className="hover:text-white">Terms & Conditions</Link></li>
             </ul>
           </div>
         </div>

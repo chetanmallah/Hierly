@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaExclamationCircle } from "react-icons/fa"; // React Icons
+import Footer from '../components/Footer'
 
 const ContactUs = () => {
   const [name, setName] = useState("");
@@ -52,7 +53,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 text-gray-800 px-20 py-20">
+    <><div className="min-h-screen bg-gray-100 text-gray-800 px-20 py-20">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-5xl font-extrabold text-center mb-10 text-green-700">
           Contact Us
@@ -78,8 +79,7 @@ const ContactUs = () => {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   className="w-full p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-600"
-                  required
-                />
+                  required />
               </div>
 
               <div>
@@ -92,8 +92,7 @@ const ContactUs = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="w-full p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-600"
-                  required
-                />
+                  required />
               </div>
             </div>
 
@@ -107,8 +106,7 @@ const ContactUs = () => {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 className="w-full p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-600"
-                required
-              />
+                required />
             </div>
 
             <button
@@ -154,6 +152,7 @@ const ContactUs = () => {
         </section>
       </div>
     </div>
+    <Footer /></>
   );
 };
 
