@@ -132,7 +132,7 @@ const FeaturedJobsSection = () => {
   useEffect(() => {
     const fetchJobs = async () => {
       try {
-        const res = await fetch("http://localhost:8080/api/v1/jobs");
+        const res = await fetch("https://hrly-production.up.railway.app/api/v1/jobs");
         const data = await res.json();
         setJobs(data.slice(0, 3)); // Show only 3 jobs
       } catch (error) {
