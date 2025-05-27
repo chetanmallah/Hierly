@@ -185,7 +185,7 @@ const ContactUs = () => {
 
     const endpoint = "https://api.web3forms.com/submit";
     const formData = new FormData();
-    formData.append("access_key", "YOUR_WEB3FORMS_API_KEY"); // Replace with your real key
+    formData.append("access_key", "c34f6bba-d42e-4b73-9208-f85cfb3bbdad"); // Replace with your real key
     formData.append("name", name);
     formData.append("email", email);
     formData.append("message", message);
