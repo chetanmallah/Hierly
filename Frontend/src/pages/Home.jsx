@@ -21,7 +21,7 @@ const Home = () => {
       <div className="pt-16 px-0">
 
         <HeroSection /> 
-          <FeaturedJobsSection/>
+{/*           <FeaturedJobsSection/> */}
         
 
         <HowItWorksSection/>
