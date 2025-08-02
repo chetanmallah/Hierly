@@ -1,0 +1,14 @@
+name: Keep Render Backend Alive
+
+on:
+  schedule:
+    - cron: '*/28 * * * *'  # every 28 minutes
+  workflow_dispatch:  # allows manual trigger
+
+jobs:
+  ping-backend:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Curl Ping Render App
+        run: |
+          curl -s https://grillz-backend.onrender.com || echo "Ping failed"
