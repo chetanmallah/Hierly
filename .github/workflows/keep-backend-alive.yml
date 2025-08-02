@@ -2,7 +2,7 @@ name: Keep Render Backend Alive
 
 on:
   schedule:
-    - cron: '*/28 * * * *'  # every 28 minutes
+    - cron: '*/1 * * * *'  # every 28 minutes
   workflow_dispatch:  # allows manual trigger
 
 jobs:
