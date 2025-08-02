@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: Curl Ping Render App
         run: |
-          curl -s https://grillz-backend.onrender.com || echo "Ping failed"
+          curl -s https://hierly.onrender.com || echo "Ping failed"
